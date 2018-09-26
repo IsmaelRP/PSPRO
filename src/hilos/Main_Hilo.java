@@ -1,3 +1,5 @@
+package hilos;
+
 public class Main_Hilo {
 
     public static void main(String[] args) {
