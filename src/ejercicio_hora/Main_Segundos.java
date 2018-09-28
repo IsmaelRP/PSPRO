@@ -6,12 +6,14 @@ public class Main_Segundos {
 
 
         Thread hilo = new Thread(new Hilo_Hora());
-        hilo.start();
+
         try {
-            Thread.sleep(20000);
+            hilo.start();
+            hilo.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
         System.out.printf("\nSe terminó");
     }
 
